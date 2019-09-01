@@ -1,3 +1,38 @@
+.banner .row, .know_more .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.banner .row .page-header a:hover, .know_more .row a:hover {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 10px 1px #9C9C9C;
+  box-shadow: 1px 1px 10px 1px #9C9C9C;
+  border-color: transparent; }
+
+.banner .row .page-header a, .know_more .row a {
+  font-size: 16px;
+  color: #4d4d4d;
+  border: 1px solid #4d4d4d;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 48px;
+  width: 158px;
+  display: inline-block; }
+
+.know_more .row h2 {
+  text-transform: uppercase;
+  font-size: 46px;
+  color: #4d4d4d; }
+
+.know_more .row h2:before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 60px;
+  background-color: #7a7a7a;
+  margin-bottom: 13px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -61,16 +96,37 @@ header.container {
   background-size: cover;
   padding-top: 101px;
   padding-bottom: 9px; }
-  .banner .row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; }
-    .banner .row .page-header {
-      border: none; }
-      .banner .row .page-header h1 {
-        font-size: 90px; }
-        .banner .row .page-header h1 small {
-          display: block;
-          font-size: 22px; }
+  .banner .row .page-header {
+    border: none; }
+    .banner .row .page-header h1 {
+      font-size: 90px;
+      margin-bottom: 30px; }
+      .banner .row .page-header h1 small {
+        display: block;
+        font-size: 22px; }
+    .banner .row .page-header a:first-of-type {
+      margin-right: 20px; }
+  .banner .row img {
+    width: 100%; }
+
+.know_more {
+  padding: 109px 0 126px; }
+  @media screen and (max-width: 768px) {
+    .know_more .row {
+      justify-content: center; } }
+  .know_more .row h2 {
+    line-height: 50px; }
+  .know_more .row p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #4d4d4d;
+    margin-bottom: 37px; }
+  .know_more .row a {
+    width: 245px; }
+  .know_more .row img {
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      .know_more .row img {
+        margin: 15px 0; } }
 
 /*# sourceMappingURL=style.css.map */
