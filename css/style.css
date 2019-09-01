@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  -webkit-font-smoothing: antialiased; }
+
+html {
+  height: 100%; }
+
+header.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1; }
+  header.container .navbar {
+    margin-bottom: 0; }
+    header.container .navbar .container-fluid .navbar-toggle {
+      border: none;
+      margin-top: 40px; }
+      header.container .navbar .container-fluid .navbar-toggle:hover, header.container .navbar .container-fluid .navbar-toggle:focus {
+        background-color: transparent; }
+      header.container .navbar .container-fluid .navbar-toggle .icon-bar {
+        background-color: #4d4d4d; }
+  header.container .navbar-default {
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background-color: transparent; }
+    header.container .navbar-default .navbar-collapse {
+      border: none;
+      padding: 0; }
+    header.container .navbar-default .navbar-brand {
+      height: auto;
+      padding: 31px 0 15px; }
+      @media screen and (max-width: 768px) {
+        header.container .navbar-default .navbar-brand {
+          margin-left: -10px; } }
+      @media screen and (max-width: 415px) {
+        header.container .navbar-default .navbar-brand {
+          margin-left: 10px; } }
+    header.container .navbar-default .navbar-nav {
+      margin-bottom: 0; }
+      header.container .navbar-default .navbar-nav li {
+        padding: 30px 20px 0; }
+        header.container .navbar-default .navbar-nav li a {
+          padding: 0 0 4px;
+          text-transform: uppercase;
+          border-bottom: 2px solid transparent;
+          color: #4d4d4d;
+          font-size: 16px; }
+          header.container .navbar-default .navbar-nav li a:focus {
+            border-bottom: 2px solid #878787;
+            text-transform: capitalize; }
+
+.banner {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 101px;
+  padding-bottom: 9px; }
+  .banner .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .banner .row .page-header {
+      border: none; }
+      .banner .row .page-header h1 {
+        font-size: 90px; }
+        .banner .row .page-header h1 small {
+          display: block;
+          font-size: 22px; }
+
+/*# sourceMappingURL=style.css.map */
