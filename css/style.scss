@@ -242,3 +242,21 @@ header.container {
     }
   }
 }
+
+.skills{
+  padding: 108px 0 125px;
+  h2 {
+    @extend %section_headline;
+    margin-bottom: 50px;
+  }
+
+  img{
+    display: block;
+    margin: auto;
+    width: 100%;
+
+    @include max-screen(768px){
+      padding: 0 10px;
+    }
+  }
+}

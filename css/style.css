@@ -20,7 +20,7 @@
   width: 158px;
   display: inline-block; }
 
-.know_more .row h2:before, .services h2:before {
+.know_more .row h2:before, .services h2:before, .skills h2:before {
   content: "";
   display: block;
   height: 4px;
@@ -29,7 +29,7 @@
   margin: auto;
   margin-bottom: 13px; }
 
-.know_more .row h2, .services h2 {
+.know_more .row h2, .services h2, .skills h2 {
   text-transform: uppercase;
   font-size: 46px;
   color: #4d4d4d;
@@ -156,5 +156,17 @@ header.container {
         font-size: 24px;
         line-height: 30px;
         margin: 15px 0 0; }
+
+.skills {
+  padding: 108px 0 125px; }
+  .skills h2 {
+    margin-bottom: 50px; }
+  .skills img {
+    display: block;
+    margin: auto;
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      .skills img {
+        padding: 0 10px; } }
 
 /*# sourceMappingURL=style.css.map */
