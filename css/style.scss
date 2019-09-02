@@ -260,3 +260,36 @@ header.container {
     }
   }
 }
+
+.portfolio{
+  padding: 107px 0 123px;
+  background-color: $bg_color;
+
+  h2{
+    @extend %section_headline;
+    margin-bottom: 20px;
+  }
+  .row {
+    margin-bottom: 12px;
+    .col-md-4 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .col-xs-12 {
+      text-align: center;
+
+      img {
+        @include max-screen(415px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  a{
+    @extend %button;
+    display: block;
+    margin: auto;
+  }
+}
