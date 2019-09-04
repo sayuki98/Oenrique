@@ -1,4 +1,4 @@
-.banner .row, .know_more .row {
+.banner .row, .know_more .row, .quantity .row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -226,5 +226,26 @@ header.container {
         border: 1px solid #212121; }
     .testimonials .owl-carousel.owl-theme .owl-dots .active span {
       background-color: #212121; }
+
+.quantity {
+  background-color: #f6f6f6;
+  padding-top: 55px;
+  margin-bottom: 154px; }
+  .quantity .row {
+    align-items: flex-end; }
+    @media screen and (max-width: 768px) {
+      .quantity .row {
+        display: inherit; } }
+    .quantity .row .text-center {
+      padding-bottom: 55px;
+      color: #212121; }
+      .quantity .row .text-center h3 {
+        font-size: 30px;
+        text-transform: uppercase;
+        opacity: 0.9; }
+        .quantity .row .text-center h3 span {
+          font-size: 22px;
+          display: block;
+          padding-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */

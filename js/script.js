@@ -5,7 +5,8 @@ $(document).ready(function(){
         margin:0,
         nav:true,
         autoplay:true,
-        autoplayTimeout:2000,
+        autoplayTimeout:5000,
+        autoplaySpeed:3000,
         autoplayHoverPause:true,
 
         responsive:{

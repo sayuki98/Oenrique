@@ -358,3 +358,32 @@ header.container {
     }
   }
 }
+
+.quantity{
+  background-color: $bg_color;
+  padding-top: 55px;
+  margin-bottom: 154px;
+
+  .row{
+    @extend %flex;
+    align-items: flex-end;
+    @include max-screen(768px){
+      display: inherit;
+    }
+
+    .text-center{
+      padding-bottom: 55px;
+      color: $carousel_color;
+      h3{
+          font-size: 30px;
+        text-transform: uppercase;
+        opacity: 0.9;
+        span{
+          font-size: 22px;
+          display: block;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
