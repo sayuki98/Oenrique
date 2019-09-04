@@ -1,9 +1,11 @@
 $main_color: #4d4d4d;
 $bg_color: #f6f6f6;
+$carousel_color: #212121;
 %flex{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 %button_hover {
@@ -101,26 +103,33 @@ header.container {
     .navbar-collapse {
       border: none;
       padding: 0;
+
+      @include max-screen(768px){
+        background: linear-gradient(to right, #e2e2e2, #dedede 50% );
+        //background-color: #e2e2e2;
+        text-align: center;
+      }
     }
 
     .navbar-brand {
       height: auto;
       padding: 31px 0 15px;
 
-      @include max-screen(768px) {
-        margin-left: -10px;
-      }
-
-      @include max-screen(415px) {
+      @include max-screen(736px) {
         margin-left: 10px;
       }
     }
 
     .navbar-nav {
-      margin-bottom: 0;
+      border: none;
+      @include max-screen(736px) {
+        margin: 0 0 10px;
+      }
 
       li {
         padding: 30px 20px 0;
+        box-sizing: border-box;
+
         a {
           padding: 0 0 4px;
           text-transform: uppercase;
@@ -199,13 +208,16 @@ header.container {
     a{
       @extend %button;
       width: 245px;
+      @include max-screen(768px){
+        margin-bottom: 15px;
+      }
     }
 
     img{
       width: 100%;
-      @include max-screen(768px){
-        margin: 15px 0;
-      }
+      //@include max-screen(768px){
+      //  margin: 15px 0;
+      //}
     }
   }
 }
@@ -215,11 +227,12 @@ header.container {
   background-color: $bg_color;
   h2 {
     @extend %section_headline;
+    margin-bottom: 20px;
   }
 
   .row{
     text-align: center;
-    &:nth-of-type(2){
+    &:first-of-type{
       display: flex;
       align-items: flex-end;
       @include max-screen(768px){
@@ -247,17 +260,11 @@ header.container {
   padding: 108px 0 125px;
   h2 {
     @extend %section_headline;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   img{
-    display: block;
-    margin: auto;
     width: 100%;
-
-    @include max-screen(768px){
-      padding: 0 10px;
-    }
   }
 }
 
@@ -267,16 +274,14 @@ header.container {
 
   h2{
     @extend %section_headline;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .row {
     margin-bottom: 12px;
-    .col-md-4 {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
 
     .col-xs-12 {
+      padding-top: 15px;
+      padding-bottom: 15px;
       text-align: center;
 
       img {
@@ -291,5 +296,65 @@ header.container {
     @extend %button;
     display: block;
     margin: auto;
+  }
+}
+
+.testimonials{
+  padding: 106px 0 121px;
+  h2 {
+    @extend %section_headline;
+    margin-bottom: 50px;
+  }
+
+  .owl-carousel.owl-theme{
+    border: 1px solid $carousel_color;
+    padding: 60px 0 38px;
+    .owl-stage-outer {
+      padding-bottom: 56px;
+      .img_holder {
+        padding-top: 20px;
+        img{
+          width: 100%;
+        }
+      }
+      .comment_holder{
+        color: $carousel_color;
+        h3{
+          text-transform: uppercase;
+          font-size: 30px;
+
+          span{
+            display: block;
+            font-size: 12px;
+          }
+        }
+        p{
+          line-height: 26px;
+          opacity: 0.6;
+        }
+      }
+    }
+    .owl-nav{
+      display: none;
+    }
+
+    .owl-dots {
+      .owl-dot {
+        outline: none;
+        span{
+          width: 13px;
+          height: 13px;
+          border-radius: 0;
+          background-color: transparent;
+          border: 1px solid $carousel_color;
+        }
+      }
+
+      .active{
+        span{
+          background-color: $carousel_color;
+        }
+      }
+    }
   }
 }
