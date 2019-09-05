@@ -298,26 +298,21 @@ header.container {
   background-color: $bg_color;
   h2 {
     @extend %section_headline;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 
   .row{
     text-align: center;
-    &:first-of-type{
-      display: flex;
-      align-items: flex-end;
-      @include max-screen(812px){
-        display: inherit;
-      }
+    @extend %flex;
+      align-items: baseline;
     }
-    &:last-of-type{
-      margin-top: 25px;
-      @include max-screen(768px){
-        margin-top: 0;
+
+    .col-sm-6 {
+      margin-bottom: 76px;
+
+      &:nth-of-type(2){
+        align-self: flex-end;
       }
-    }
-    .col-sm-12 {
-      margin-top: 50px;
       p {
         font-size: 24px;
         line-height: 30px;
@@ -325,7 +320,6 @@ header.container {
         font-family: 'AsapMedium';
       }
     }
-  }
 }
 
 .skills{

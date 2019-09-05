@@ -3,7 +3,7 @@
 @import url(AsapBold.css);
 @import url(AsapItalic.css);
 @import url(MontserratRegular.css);
-.banner .row, .know_more .row, .quantity .row {
+.banner .row, .know_more .row, .services .row, .quantity .row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -177,27 +177,19 @@ header.container {
   padding: 110px 0 120px;
   background-color: #f6f6f6; }
   .services h2 {
-    margin-bottom: 20px; }
+    margin-bottom: 60px; }
   .services .row {
-    text-align: center; }
-    .services .row:first-of-type {
-      display: flex;
-      align-items: flex-end; }
-      @media screen and (max-width: 812px) {
-        .services .row:first-of-type {
-          display: inherit; } }
-    .services .row:last-of-type {
-      margin-top: 25px; }
-      @media screen and (max-width: 768px) {
-        .services .row:last-of-type {
-          margin-top: 0; } }
-    .services .row .col-sm-12 {
-      margin-top: 50px; }
-      .services .row .col-sm-12 p {
-        font-size: 24px;
-        line-height: 30px;
-        margin: 15px 0 0;
-        font-family: 'AsapMedium'; }
+    text-align: center;
+    align-items: baseline; }
+  .services .col-sm-6 {
+    margin-bottom: 76px; }
+    .services .col-sm-6:nth-of-type(2) {
+      align-self: flex-end; }
+    .services .col-sm-6 p {
+      font-size: 24px;
+      line-height: 30px;
+      margin: 15px 0 0;
+      font-family: 'AsapMedium'; }
 
 .skills {
   padding: 108px 0 125px; }
