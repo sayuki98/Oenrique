@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AsapMedium';
+    src: url('../fonts/AsapMedium.eot');
+    src: url('../fonts/AsapMedium.eot') format('embedded-opentype'),
+         url('../fonts/AsapMedium.woff2') format('woff2'),
+         url('../fonts/AsapMedium.woff') format('woff'),
+         url('../fonts/AsapMedium.ttf') format('truetype'),
+         url('../fonts/AsapMedium.svg#AsapMedium') format('svg');
+}

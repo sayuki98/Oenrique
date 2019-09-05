@@ -1,7 +1,13 @@
-@import "../fonts/";
+@import "AsapRegular.css";
+@import "AsapMedium.css";
+@import "AsapBold.css";
+@import "AsapItalic.css";
+@import "MontserratRegular.css";
+
 $main_color: #4d4d4d;
 $bg_color: #f6f6f6;
 $text_color: #212121;
+
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
     @content;
@@ -56,6 +62,7 @@ $text_color: #212121;
   display: inline-block;
   border-radius: 0;
   padding: 0;
+  font-family: 'AsapMedium';
   &:hover{
     @extend %button_hover;
   }
@@ -75,6 +82,8 @@ $text_color: #212121;
   font-size: 46px;
   color: $main_color;
   text-align: center;
+  opacity: 0.8;
+  font-family: 'AsapBold';
 
   &:before{
     @extend %line_above;
@@ -87,6 +96,7 @@ $text_color: #212121;
   font-size: inherit;
   color: inherit;
   -webkit-font-smoothing: antialiased;
+  font-family: 'AsapRegular';
 }
 
 html {
@@ -186,10 +196,12 @@ header.container {
       h1 {
         font-size: 90px;
         margin-bottom: 30px;
+        font-family: 'AsapMedium';
 
         small {
           display: block;
           font-size: 22px;
+          font-family: 'AsapMedium';
         }
       }
 
@@ -274,6 +286,7 @@ header.container {
         font-size: 24px;
         line-height: 30px;
         margin: 15px 0 0;
+        font-family: 'AsapMedium';
       }
     }
   }
@@ -361,10 +374,12 @@ header.container {
         h3{
           text-transform: uppercase;
           font-size: 30px;
+          font-family: 'AsapMedium';
 
           span{
             display: block;
             font-size: 12px;
+            font-family: 'AsapItalic';
           }
         }
         p{
@@ -414,9 +429,10 @@ header.container {
       padding-bottom: 55px;
       color: $text_color;
       h3{
-          font-size: 30px;
+        font-size: 30px;
         text-transform: uppercase;
         opacity: 0.9;
+        font-family: 'AsapMedium';
         span{
           font-size: 22px;
           display: block;
@@ -459,6 +475,7 @@ footer {
           outline: none;
           font-size: 16px;
           color: $text_color;
+          font-family: 'AsapRegular';
 
           @include placeholder($text_color, 0.8);
         }
@@ -475,6 +492,7 @@ footer {
         font-size: 16px;
         color: $text_color;
         border-radius: 0;
+        font-family: 'AsapRegular';
 
         @include placeholder($text_color, 0.8);
       }
@@ -537,6 +555,7 @@ footer {
       font-size: 16px;
       color: #FFFFFF;
       text-align: center;
+      font-family: 'MontserratRegular';
     }
   }
 }

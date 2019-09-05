@@ -1,51 +1,409 @@
-/*
-Error: File to import not found or unreadable: ../fonts/.
-        on line 1 of style.scss
+@import url(AsapRegular.css);
+@import url(AsapMedium.css);
+@import url(AsapBold.css);
+@import url(AsapItalic.css);
+@import url(MontserratRegular.css);
+.banner .row, .know_more .row, .quantity .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
 
-1: @import "../fonts/";
-2: $main_color: #4d4d4d;
-3: $bg_color: #f6f6f6;
-4: $text_color: #212121;
-5: @mixin max-screen($res) {
-6:   @media screen and (max-width: $res) {
+.banner .row .page-header a:hover, .know_more .row a:hover, .portfolio a.btn:hover {
+  background-color: #FFFFFF;
+  border-color: transparent;
+  -webkit-box-shadow: 1px 1px 10px 1px #9C9C9C;
+  box-shadow: 1px 1px 10px 1px #9C9C9C; }
 
-Backtrace:
-style.scss:1
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/bin/scss:13:in `<top (required)>'
-C:/Ruby25-x64/bin/scss:23:in `load'
-C:/Ruby25-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../fonts/.\A         on line 1 of style.scss\A \A 1: @import \"../fonts/\";\A 2: $main_color: #4d4d4d;\A 3: $bg_color: #f6f6f6;\A 4: $text_color: #212121;\A 5: @mixin max-screen($res) {\A 6:   @media screen and (max-width: $res) {"; }
+.banner .row .page-header a, .know_more .row a, .portfolio a.btn {
+  font-size: 16px;
+  color: #4d4d4d;
+  border: 1px solid #4d4d4d;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 48px;
+  width: 158px;
+  display: inline-block;
+  border-radius: 0;
+  padding: 0;
+  font-family: 'AsapMedium'; }
+
+.know_more .row h2:before, .services h2:before, .skills h2:before, .portfolio h2:before, .testimonials h2:before, footer h2:before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 60px;
+  background-color: #7a7a7a;
+  margin: auto;
+  margin-bottom: 13px; }
+
+.know_more .row h2, .services h2, .skills h2, .portfolio h2, .testimonials h2, footer h2 {
+  text-transform: uppercase;
+  font-size: 46px;
+  color: #4d4d4d;
+  text-align: center;
+  opacity: 0.8;
+  font-family: 'AsapBold'; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'AsapRegular'; }
+
+html {
+  height: 100%; }
+
+header.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1; }
+  header.container .navbar {
+    margin-bottom: 0; }
+    header.container .navbar .container-fluid .navbar-toggle {
+      border: none;
+      margin-top: 40px; }
+      header.container .navbar .container-fluid .navbar-toggle:hover, header.container .navbar .container-fluid .navbar-toggle:focus {
+        background-color: transparent; }
+      header.container .navbar .container-fluid .navbar-toggle .icon-bar {
+        background-color: #4d4d4d; }
+  header.container .navbar-default {
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background-color: transparent; }
+    header.container .navbar-default .navbar-collapse {
+      border: none;
+      padding: 0; }
+      @media screen and (max-width: 768px) {
+        header.container .navbar-default .navbar-collapse {
+          background: linear-gradient(to right, #e2e2e2, #dedede 50%);
+          text-align: center; } }
+    header.container .navbar-default .navbar-brand {
+      height: auto;
+      padding: 31px 0 15px; }
+      @media screen and (max-width: 736px) {
+        header.container .navbar-default .navbar-brand {
+          margin-left: 10px; } }
+    header.container .navbar-default .navbar-nav {
+      border: none; }
+      @media screen and (max-width: 736px) {
+        header.container .navbar-default .navbar-nav {
+          margin: 0 0 10px; } }
+      header.container .navbar-default .navbar-nav li {
+        padding: 30px 20px 0;
+        box-sizing: border-box; }
+        header.container .navbar-default .navbar-nav li a {
+          padding: 0 0 4px;
+          text-transform: uppercase;
+          border-bottom: 2px solid transparent;
+          color: #4d4d4d;
+          font-size: 16px; }
+          header.container .navbar-default .navbar-nav li a:focus {
+            border-bottom: 2px solid #878787;
+            text-transform: capitalize; }
+
+.banner {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 101px;
+  padding-bottom: 9px; }
+  .banner .row .page-header {
+    border: none; }
+    .banner .row .page-header h1 {
+      font-size: 90px;
+      margin-bottom: 30px;
+      font-family: 'AsapMedium'; }
+      .banner .row .page-header h1 small {
+        display: block;
+        font-size: 22px;
+        font-family: 'AsapMedium'; }
+    .banner .row .page-header a:first-of-type {
+      margin-right: 20px; }
+  .banner .row img {
+    width: 100%; }
+
+.know_more {
+  padding: 109px 0 126px; }
+  @media screen and (max-width: 768px) {
+    .know_more .row {
+      justify-content: center; } }
+  .know_more .row h2 {
+    line-height: 50px;
+    text-align: left; }
+    .know_more .row h2:before {
+      margin: 0 0 13px; }
+  .know_more .row p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #4d4d4d;
+    margin-bottom: 37px; }
+  .know_more .row a {
+    width: 245px; }
+    @media screen and (max-width: 768px) {
+      .know_more .row a {
+        margin-bottom: 15px; } }
+  .know_more .row img {
+    width: 100%; }
+
+.services {
+  padding: 110px 0 120px;
+  background-color: #f6f6f6; }
+  .services h2 {
+    margin-bottom: 20px; }
+  .services .row {
+    text-align: center; }
+    .services .row:first-of-type {
+      display: flex;
+      align-items: flex-end; }
+      @media screen and (max-width: 768px) {
+        .services .row:first-of-type {
+          display: inherit; } }
+    .services .row:last-of-type {
+      margin-top: 25px; }
+      @media screen and (max-width: 768px) {
+        .services .row:last-of-type {
+          margin-top: 0; } }
+    .services .row .col-sm-12 {
+      margin-top: 50px; }
+      .services .row .col-sm-12 p {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 15px 0 0;
+        font-family: 'AsapMedium'; }
+
+.skills {
+  padding: 108px 0 125px; }
+  .skills h2 {
+    margin-bottom: 60px; }
+  .skills img {
+    width: 100%; }
+
+.portfolio {
+  padding: 107px 0 123px;
+  background-color: #f6f6f6; }
+  .portfolio h2 {
+    margin-bottom: 30px; }
+  .portfolio .row .col-xs-12 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+    @media screen and (max-width: 415px) {
+      .portfolio .row .col-xs-12 img {
+        width: 100%; } }
+    .portfolio .row .col-xs-12 img:hover {
+      -webkit-box-shadow: 1px 1px 10px 1px #9C9C9C;
+      box-shadow: 1px 1px 10px 1px #9C9C9C; }
+  .portfolio a.btn {
+    margin-top: 12px; }
+    .portfolio a.btn span:last-of-type {
+      display: none; }
+  .portfolio a.collapsed span:first-of-type {
+    display: none; }
+  .portfolio a.collapsed span:last-of-type {
+    display: inline-block; }
+
+.testimonials {
+  padding: 106px 0 121px; }
+  .testimonials h2 {
+    margin-bottom: 50px; }
+  .testimonials .owl-carousel.owl-theme {
+    border: 1px solid #212121;
+    padding: 60px 0 38px; }
+    .testimonials .owl-carousel.owl-theme .owl-stage-outer {
+      padding-bottom: 56px; }
+      .testimonials .owl-carousel.owl-theme .owl-stage-outer .img_holder {
+        padding-top: 20px; }
+        .testimonials .owl-carousel.owl-theme .owl-stage-outer .img_holder img {
+          width: 100%; }
+      .testimonials .owl-carousel.owl-theme .owl-stage-outer .comment_holder {
+        color: #212121; }
+        .testimonials .owl-carousel.owl-theme .owl-stage-outer .comment_holder h3 {
+          text-transform: uppercase;
+          font-size: 30px;
+          font-family: 'AsapMedium'; }
+          .testimonials .owl-carousel.owl-theme .owl-stage-outer .comment_holder h3 span {
+            display: block;
+            font-size: 12px;
+            font-family: 'AsapItalic'; }
+        .testimonials .owl-carousel.owl-theme .owl-stage-outer .comment_holder p {
+          line-height: 26px;
+          opacity: 0.6; }
+    .testimonials .owl-carousel.owl-theme .owl-nav {
+      display: none; }
+    .testimonials .owl-carousel.owl-theme .owl-dots .owl-dot {
+      outline: none; }
+      .testimonials .owl-carousel.owl-theme .owl-dots .owl-dot span {
+        width: 13px;
+        height: 13px;
+        border-radius: 0;
+        background-color: transparent;
+        border: 1px solid #212121; }
+    .testimonials .owl-carousel.owl-theme .owl-dots .active span {
+      background-color: #212121; }
+
+.quantity {
+  background-color: #f6f6f6;
+  padding-top: 55px;
+  margin-bottom: 154px; }
+  .quantity .row {
+    align-items: flex-end; }
+    @media screen and (max-width: 768px) {
+      .quantity .row {
+        display: inherit; } }
+    .quantity .row .text-center {
+      padding-bottom: 55px;
+      color: #212121; }
+      .quantity .row .text-center h3 {
+        font-size: 30px;
+        text-transform: uppercase;
+        opacity: 0.9;
+        font-family: 'AsapMedium'; }
+        .quantity .row .text-center h3 span {
+          font-size: 22px;
+          display: block;
+          padding-top: 5px; }
+
+footer {
+  background-image: url("../images/contact_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 145px; }
+  footer h2 {
+    color: #FFFFFF;
+    margin-bottom: 70px; }
+    footer h2:before {
+      background-color: #FFFFFF; }
+  footer .row {
+    border-bottom: 1px solid #FFFFFF; }
+    footer .row form {
+      padding-bottom: 58px; }
+      footer .row form .form-group {
+        margin-bottom: 30px; }
+        footer .row form .form-group input {
+          line-height: 57px;
+          border: none;
+          padding-left: 10px;
+          box-sizing: border-box;
+          width: 100%;
+          outline: none;
+          font-size: 16px;
+          color: #212121;
+          font-family: 'AsapRegular'; }
+          footer .row form .form-group input::-webkit-input-placeholder {
+            color: #212121;
+            opacity: 0.8; }
+          footer .row form .form-group input::-moz-placeholder {
+            color: #212121;
+            opacity: 0.8; }
+          footer .row form .form-group input:-moz-placeholder {
+            color: #212121;
+            opacity: 0.8; }
+          footer .row form .form-group input:-ms-input-placeholder {
+            color: #212121;
+            opacity: 0.8; }
+      footer .row form textarea.form-control {
+        border: none;
+        padding: 22px 0 0 10px;
+        box-sizing: border-box;
+        resize: none;
+        width: 100%;
+        margin-bottom: 30px;
+        outline: none;
+        font-size: 16px;
+        color: #212121;
+        border-radius: 0;
+        font-family: 'AsapRegular'; }
+        footer .row form textarea.form-control::-webkit-input-placeholder {
+          color: #212121;
+          opacity: 0.8; }
+        footer .row form textarea.form-control::-moz-placeholder {
+          color: #212121;
+          opacity: 0.8; }
+        footer .row form textarea.form-control:-moz-placeholder {
+          color: #212121;
+          opacity: 0.8; }
+        footer .row form textarea.form-control:-ms-input-placeholder {
+          color: #212121;
+          opacity: 0.8; }
+      footer .row form button.btn {
+        background-color: #FFFFFF;
+        border: none;
+        line-height: 50px;
+        text-align: center;
+        font-size: 16px;
+        width: 123px;
+        margin: auto;
+        outline: none;
+        color: #212121;
+        padding: 0;
+        border-radius: 0; }
+        footer .row form button.btn img {
+          margin-left: 9px;
+          margin-bottom: 3px; }
+  footer .links {
+    padding-top: 26px; }
+    footer .links .socials {
+      padding-left: 0; }
+      @media screen and (max-width: 768px) {
+        footer .links .socials {
+          text-align: center;
+          padding-left: 15px; } }
+      footer .links .socials a {
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        color: #4d4d4d;
+        background-color: #FFFFFF;
+        margin-right: 9px;
+        margin-bottom: 30px; }
+        footer .links .socials a:last-of-type {
+          margin-right: 0; }
+        footer .links .socials a:hover {
+          color: #FFFFFF;
+          background-color: #0084b4; }
+        footer .links .socials a i {
+          line-height: 27px; }
+    footer .links p {
+      font-size: 16px;
+      color: #FFFFFF;
+      text-align: center;
+      font-family: 'MontserratRegular'; }
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 193px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #FFFFFF;
+  /* Set a background color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  height: 41px;
+  width: 45px;
+  -webkit-box-shadow: 1px 1px 10px 1px #616161;
+  box-shadow: 1px 1px 10px 1px #616161; }
+  #myBtn i {
+    line-height: 41px;
+    color: #4d4d4d;
+    font-size: 16px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AsapItalic';
+    src: url('../fonts/AsapItalic.eot');
+    src: url('../fonts/AsapItalic.eot') format('embedded-opentype'),
+         url('../fonts/AsapItalic.woff2') format('woff2'),
+         url('../fonts/AsapItalic.woff') format('woff'),
+         url('../fonts/AsapItalic.ttf') format('truetype'),
+         url('../fonts/AsapItalic.svg#AsapItalic') format('svg');
+}

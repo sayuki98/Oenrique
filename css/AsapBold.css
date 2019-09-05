@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AsapBold';
+    src: url('../fonts/AsapBold.eot');
+    src: url('../fonts/AsapBold.eot') format('embedded-opentype'),
+         url('../fonts/AsapBold.woff2') format('woff2'),
+         url('../fonts/AsapBold.woff') format('woff'),
+         url('../fonts/AsapBold.ttf') format('truetype'),
+         url('../fonts/AsapBold.svg#AsapBold') format('svg');
+}
