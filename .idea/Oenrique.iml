@@ -5,5 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Author" />
+    <orderEntry type="module" module-name="login_signup" />
+    <orderEntry type="module" module-name="bootstrap" />
   </component>
 </module>

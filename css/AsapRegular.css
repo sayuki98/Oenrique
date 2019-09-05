@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AsapRegular';
+    src: url('../fonts/AsapRegular.eot');
+    src: url('../fonts/AsapRegular.eot') format('embedded-opentype'),
+         url('../fonts/AsapRegular.woff2') format('woff2'),
+         url('../fonts/AsapRegular.woff') format('woff'),
+         url('../fonts/AsapRegular.ttf') format('truetype'),
+         url('../fonts/AsapRegular.svg#AsapRegular') format('svg');
+}
