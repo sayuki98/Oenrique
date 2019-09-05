@@ -9,13 +9,13 @@
   align-items: center;
   justify-content: center; }
 
-.banner .row .page-header a:hover, .know_more .row a:hover, .portfolio a.btn:hover {
+.banner .row div .page-header a:hover, .know_more .row a:hover, .portfolio a.btn:hover {
   background-color: #FFFFFF;
   border-color: transparent;
   -webkit-box-shadow: 1px 1px 10px 1px #9C9C9C;
   box-shadow: 1px 1px 10px 1px #9C9C9C; }
 
-.banner .row .page-header a, .know_more .row a, .portfolio a.btn {
+.banner .row div .page-header a, .know_more .row a, .portfolio a.btn {
   font-size: 16px;
   color: #4d4d4d;
   border: 1px solid #4d4d4d;
@@ -115,19 +115,39 @@ header.container {
   background-size: cover;
   padding-top: 101px;
   padding-bottom: 9px; }
-  .banner .row .page-header {
+  @media screen and (max-width: 415px) {
+    .banner .row div {
+      order: 1; } }
+  .banner .row div .page-header {
     border: none; }
-    .banner .row .page-header h1 {
+    .banner .row div .page-header h1 {
       font-size: 90px;
       margin-bottom: 30px;
       font-family: 'AsapMedium'; }
-      .banner .row .page-header h1 small {
+      @media screen and (max-width: 376px) {
+        .banner .row div .page-header h1 {
+          font-size: 70px; } }
+      .banner .row div .page-header h1 small {
         display: block;
         font-size: 22px;
         font-family: 'AsapMedium'; }
-    .banner .row .page-header a:first-of-type {
+        @media screen and (max-width: 376px) {
+          .banner .row div .page-header h1 small {
+            margin-top: 10px;
+            font-size: 16px; } }
+    .banner .row div .page-header a:first-of-type {
       margin-right: 20px; }
-  .banner .row img {
+    @media screen and (max-width: 321px) {
+      .banner .row div .page-header a {
+        display: block;
+        margin: auto; }
+        .banner .row div .page-header a:first-of-type {
+          margin-right: auto;
+          margin-bottom: 20px; } }
+  @media screen and (max-width: 415px) {
+    .banner .row div:last-of-type {
+      order: 0; } }
+  .banner .row div img {
     width: 100%; }
 
 .know_more {
@@ -146,11 +166,11 @@ header.container {
     color: #4d4d4d;
     margin-bottom: 37px; }
   .know_more .row a {
-    width: 245px; }
-    @media screen and (max-width: 768px) {
-      .know_more .row a {
-        margin-bottom: 15px; } }
-  .know_more .row img {
+    width: 245px;
+    margin-bottom: 15px; }
+  .know_more .row div:last-of-type {
+    flex-grow: 1; }
+  .know_more .row div img {
     width: 100%; }
 
 .services {
@@ -163,7 +183,7 @@ header.container {
     .services .row:first-of-type {
       display: flex;
       align-items: flex-end; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 812px) {
         .services .row:first-of-type {
           display: inherit; } }
     .services .row:last-of-type {
@@ -255,9 +275,9 @@ header.container {
   margin-bottom: 154px; }
   .quantity .row {
     align-items: flex-end; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 736px) {
       .quantity .row {
-        display: inherit; } }
+        display: block; } }
     .quantity .row .text-center {
       padding-bottom: 55px;
       color: #212121; }
@@ -380,27 +400,21 @@ footer {
 
 #myBtn {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 193px;
-  /* Place the button at the bottom of the page */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   background-color: #FFFFFF;
-  /* Set a background color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   height: 41px;
   width: 45px;
   -webkit-box-shadow: 1px 1px 10px 1px #616161;
   box-shadow: 1px 1px 10px 1px #616161; }
+  @media screen and (max-width: 1024px) {
+    #myBtn {
+      bottom: 30px; } }
   #myBtn i {
     line-height: 41px;
     color: #4d4d4d;
