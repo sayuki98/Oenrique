@@ -62,6 +62,9 @@ $text_color: #212121;
   display: inline-block;
   border-radius: 0;
   padding: 0;
+  background-image: none;
+  background-color: transparent;
+  text-shadow: none;
   font-family: 'AsapMedium';
   &:hover{
     @extend %button_hover;
@@ -101,6 +104,8 @@ $text_color: #212121;
 
 html {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 header.container {
@@ -490,7 +495,9 @@ footer {
   }
 
   .row {
-    border-bottom: 1px solid #FFFFFF;
+    &:first-of-type {
+      border-bottom: 1px solid #FFFFFF;
+    }
     form {
       padding-bottom: 58px;
 
@@ -539,6 +546,7 @@ footer {
         color: $text_color;
         padding: 0;
         border-radius: 0;
+        background-image: none;
 
         img{
           margin-left: 9px;

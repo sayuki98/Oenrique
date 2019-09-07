@@ -27,6 +27,9 @@
   display: inline-block;
   border-radius: 0;
   padding: 0;
+  background-image: none;
+  background-color: transparent;
+  text-shadow: none;
   font-family: 'AsapMedium'; }
 
 .know_more .row h2:before, .services h2:before, .skills h2:before, .portfolio h2:before, .testimonials h2:before, footer h2:before {
@@ -55,7 +58,9 @@
   font-family: 'AsapRegular'; }
 
 html {
-  height: 100%; }
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; }
 
 header.container {
   position: absolute;
@@ -293,73 +298,74 @@ footer {
     margin-bottom: 70px; }
     footer h2:before {
       background-color: #FFFFFF; }
-  footer .row {
+  footer .row:first-of-type {
     border-bottom: 1px solid #FFFFFF; }
-    footer .row form {
-      padding-bottom: 58px; }
-      footer .row form .form-group {
-        margin-bottom: 30px; }
-        footer .row form .form-group input {
-          line-height: 57px;
-          border: none;
-          padding-left: 10px;
-          box-sizing: border-box;
-          width: 100%;
-          outline: none;
-          font-size: 16px;
-          color: #212121;
-          font-family: 'AsapRegular'; }
-          footer .row form .form-group input::-webkit-input-placeholder {
-            color: #212121;
-            opacity: 0.8; }
-          footer .row form .form-group input::-moz-placeholder {
-            color: #212121;
-            opacity: 0.8; }
-          footer .row form .form-group input:-moz-placeholder {
-            color: #212121;
-            opacity: 0.8; }
-          footer .row form .form-group input:-ms-input-placeholder {
-            color: #212121;
-            opacity: 0.8; }
-      footer .row form textarea.form-control {
+  footer .row form {
+    padding-bottom: 58px; }
+    footer .row form .form-group {
+      margin-bottom: 30px; }
+      footer .row form .form-group input {
+        line-height: 57px;
         border: none;
-        padding: 22px 0 0 10px;
+        padding-left: 10px;
         box-sizing: border-box;
-        resize: none;
         width: 100%;
-        margin-bottom: 30px;
         outline: none;
         font-size: 16px;
         color: #212121;
-        border-radius: 0;
         font-family: 'AsapRegular'; }
-        footer .row form textarea.form-control::-webkit-input-placeholder {
+        footer .row form .form-group input::-webkit-input-placeholder {
           color: #212121;
           opacity: 0.8; }
-        footer .row form textarea.form-control::-moz-placeholder {
+        footer .row form .form-group input::-moz-placeholder {
           color: #212121;
           opacity: 0.8; }
-        footer .row form textarea.form-control:-moz-placeholder {
+        footer .row form .form-group input:-moz-placeholder {
           color: #212121;
           opacity: 0.8; }
-        footer .row form textarea.form-control:-ms-input-placeholder {
+        footer .row form .form-group input:-ms-input-placeholder {
           color: #212121;
           opacity: 0.8; }
-      footer .row form button.btn {
-        background-color: #FFFFFF;
-        border: none;
-        line-height: 50px;
-        text-align: center;
-        font-size: 16px;
-        width: 123px;
-        margin: auto;
-        outline: none;
+    footer .row form textarea.form-control {
+      border: none;
+      padding: 22px 0 0 10px;
+      box-sizing: border-box;
+      resize: none;
+      width: 100%;
+      margin-bottom: 30px;
+      outline: none;
+      font-size: 16px;
+      color: #212121;
+      border-radius: 0;
+      font-family: 'AsapRegular'; }
+      footer .row form textarea.form-control::-webkit-input-placeholder {
         color: #212121;
-        padding: 0;
-        border-radius: 0; }
-        footer .row form button.btn img {
-          margin-left: 9px;
-          margin-bottom: 3px; }
+        opacity: 0.8; }
+      footer .row form textarea.form-control::-moz-placeholder {
+        color: #212121;
+        opacity: 0.8; }
+      footer .row form textarea.form-control:-moz-placeholder {
+        color: #212121;
+        opacity: 0.8; }
+      footer .row form textarea.form-control:-ms-input-placeholder {
+        color: #212121;
+        opacity: 0.8; }
+    footer .row form button.btn {
+      background-color: #FFFFFF;
+      border: none;
+      line-height: 50px;
+      text-align: center;
+      font-size: 16px;
+      width: 123px;
+      margin: auto;
+      outline: none;
+      color: #212121;
+      padding: 0;
+      border-radius: 0;
+      background-image: none; }
+      footer .row form button.btn img {
+        margin-left: 9px;
+        margin-bottom: 3px; }
   footer .links {
     padding-top: 26px; }
     footer .links .socials {

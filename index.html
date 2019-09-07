@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,8 +20,7 @@
     <div class="row">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
+                <div class="navbar-header" data-aos="fade-left">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -28,20 +28,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="#" data-aos="fade-down"><img src="images/logo.png" alt="logo"></a>
                 </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">service</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li  data-aos="fade-down" data-aos-delay="800"><a href="#">home</a></li>
+                        <li  data-aos="fade-down" data-aos-delay="600"><a href="#">about</a></li>
+                        <li  data-aos="fade-down" data-aos-delay="400"><a href="#">service</a></li>
+                        <li  data-aos="fade-down" data-aos-delay="200"><a href="#">portfolio</a></li>
+                        <li  data-aos="fade-down"><a href="#">contact</a></li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+                </div>
+            </div>
         </nav>
     </div>
 </header>
@@ -49,13 +47,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="page-header">
+                <div class="page-header" data-aos="fade-up">
                     <h1>Luis Oenrique<small>User Experience / User Interface Expert</small></h1>
-                    <a href="#" role="button" class="btn">know more</a>
-                    <a href="#" role="button" class="btn">hire me</a>
+                    <a href="#" role="button" class="btn btn-default " data-aos="zoom-in" data-aos-delay="500">know more</a>
+                    <a href="#" role="button" class="btn btn-default " data-aos="zoom-in" data-aos-delay="500">hire me</a>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="zoom-in">
                 <img src="images/img_face.png" alt="hero">
             </div>
         </div>
@@ -65,80 +63,80 @@
 <section class="know_more">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-sm-12">
+            <div class="col-md-5 col-sm-12" data-aos="fade-right">
                 <h2>know more about me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                <a href="#" role="button" class="btn">DOWNLOAD MY CV</a>
+                <a href="#" role="button" class="btn btn-default ">DOWNLOAD MY CV</a>
             </div>
-            <div class="col-md-6 col-md-offset-1 col-sm-offset-0 col-sm-12">
+            <div class="col-md-6 col-md-offset-1 col-sm-offset-0 col-sm-12" data-aos="fade-left">
                 <img src="images/about.png" alt="know_more">
             </div>
         </div>
     </div>
 </section>
 <section class="services">
-    <h2>services</h2>
+    <h2  data-aos="flip-up">services</h2>
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <img src="images/user.png" alt="">
-                <p>User Research</p>
+                <img src="images/user.png" alt="" data-aos="zoom-in">
+                <p data-aos="fade-up" data-aos-delay="700">User Research</p>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <img src="images/wireframe.png" alt="">
-                <p>IA and Wireframes</p>
+                <img src="images/wireframe.png" alt="" data-aos="zoom-in">
+                <p data-aos="fade-up" data-aos-delay="700">IA and Wireframes</p>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <img src="images/test.png" alt="">
-                <p>User Testing</p>
+                <img src="images/test.png" alt="" data-aos="zoom-in">
+                <p data-aos="fade-up" data-aos-delay="700">User Testing</p>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <img src="images/design.png" alt="">
-                <p>Looks and Feel<br>Design (UI)</p>
+                <img src="images/design.png" alt="" data-aos="zoom-in">
+                <p data-aos="fade-up" data-aos-delay="700">Looks and Feel<br>Design (UI)</p>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <img src="images/delivery.png" alt="">
-                <p>Delivery</p>
+                <img src="images/delivery.png" alt="" data-aos="zoom-in">
+                <p data-aos="fade-up" data-aos-delay="700">Delivery</p>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <img src="images/support.png" alt="">
-                <p>Integration Support</p>
+                <img src="images/support.png" alt="" data-aos="zoom-in">
+                <p data-aos="fade-up" data-aos-delay="700">Integration Support</p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="skills">
-    <h2>my skills</h2>
+    <h2  data-aos="flip-up">my skills</h2>
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-sm-offset-0 col-sm-12">
-                <img src="images/skill_board.png" alt="">
+                <img src="images/skill_board.png" alt=""  data-aos="flip-left">
             </div>
         </div>
     </div>
 </section>
 
 <section class="portfolio">
-    <h2>Portfolio</h2>
+    <h2  data-aos="flip-up">Portfolio</h2>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="col-lg-4 col-md-6 col-xs-12" data-aos="flip-down">
                 <img src="images/1.png" alt="">
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="col-lg-4 col-md-6 col-xs-12" data-aos="flip-down">
                 <img src="images/2.png" alt="">
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="col-lg-4 col-md-6 col-xs-12" data-aos="flip-down">
                 <img src="images/3.png" alt="">
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="col-lg-4 col-md-6 col-xs-12" data-aos="flip-down">
                 <img src="images/4.png" alt="">
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="col-lg-4 col-md-6 col-xs-12" data-aos="flip-down">
                 <img src="images/5.png" alt="">
             </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="col-lg-4 col-md-6 col-xs-12" data-aos="flip-down">
                 <img src="images/6.png" alt="">
             </div>
 
@@ -165,7 +163,7 @@
         </div>
         </div>
         <div class="text-center">
-            <a class="btn collapsed" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <a class="btn btn-default collapsed" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 <span>hide</span>
                 <span>load more</span>
             </a>
@@ -174,10 +172,10 @@
 </section>
 
 <section class="testimonials">
-    <h2>testimonials</h2>
+    <h2  data-aos="flip-up">testimonials</h2>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1" data-aos="zoom-out">
                 <div class="owl-carousel owl-theme">
                     <div class="carousel">
                         <div class="img_holder col-md-2 col-sm-3 col-sm-offset-1 col-xs-offset-0">
@@ -214,19 +212,19 @@
 <section class="quantity">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 text-center" data-aos="fade-up-right">
                 <img src="images/table.png" alt="">
                 <h3>120<span>hands to work</span></h3>
             </div>
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 text-center" data-aos="fade-up-right" data-aos-delay="500">
                 <img src="images/smile.png" alt="">
                 <h3>310<span>happy client</span></h3>
             </div>
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 text-center" data-aos="fade-up-left" data-aos-delay="500">
                 <img src="images/clipboard.png" alt="">
                 <h3>510<span>finished project</span></h3>
             </div>
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 text-center" data-aos="fade-up-left">
                 <img src="images/coffee.png" alt="">
                 <h3>720<span>cups of coffee</span></h3>
             </div>
@@ -234,21 +232,21 @@
     </div>
 </section>
 <footer>
-    <h2>say hello!</h2>
-    <div class="container">
+    <h2  data-aos="flip-up">say hello!</h2>
+    <div class="container" data-aos="fade-down">
         <div class="row">
             <form method="post" action="" class="col-md-8 col-md-offset-2">
-                <div class="form-group col-md-6 col-xs-12">
+                <div class="form-group col-md-6 col-xs-12" data-aos="fade-down-right">
                     <input type="text" name="name" placeholder="Name">
                 </div>
-                <div class="form-group col-md-6 col-xs-12">
+                <div class="form-group col-md-6 col-xs-12" data-aos="fade-down-left">
                     <input type="email" name="email" placeholder="Email">
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-down">
                     <textarea class="form-control" rows="8" placeholder="Message"></textarea>
                 </div>
-                <div class="col-md-12 text-center">
-                    <button type="submit" class="btn">Send<img src="images/send-button.ico" alt=""></button>
+                <div class="col-md-12 text-center" data-aos="flip-left">
+                    <button type="submit" class="btn btn-default ">Send<img src="images/send-button.ico" alt=""></button>
                 </div>
             </form>
         </div>
@@ -273,6 +271,7 @@
 <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/owl.carousel.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
